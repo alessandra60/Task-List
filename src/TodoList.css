@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: #222435;
+    font-family: 'Roboto', sans-serif;
+}
+
+*:focus{
+    outline:none;
+}
+
+h1{
+    font-weight: 900;
+    color: #7d83b9;
+    text-align: center;
+}
+
+form{
+    position: relative;
+    display: flex;
+    width: 600px;
+    height: 60px;
+    margin:30px auto;
+    margin-bottom: 60px;
+}
+
+button.add{
+   position: absolute; 
+   top:0;
+   right:0;
+   background: #363b65;
+   color:white;
+   cursor: pointer;
+   padding: 10px 25px;
+   border:none;
+   height: 60px;
+   border-top-right-radius: 10px;
+   border-top-right-radius: 10px;
+}
+
+button.add:hover{
+    color:white;
+    background: #363f88;
+}
+
+.TaskList{
+   display: flex;
+   justify-content: center;
+   flex-flow: column wrap;
+   margin:auto;
+   width: 600px;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    border:1px solid #363b65;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.item:hover{
+    background: #151627;
+}
+
+.item span{
+    width: 100%;
+    color: white;
+    margin-right: 10px;
+    padding: 10px 15px;
+    text-align:start ;
+}
+
+.item.complete{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: #1e1f2e;
+    border:none;
+    opacity: 0.2;
+}
+.item.complete span{
+    width: 100%;
+    color: #4d506e;
+    margin-right: 10px;
+    padding: 10px 15px;
+    text-decoration: line-through;
+
+}
+button.del{
+    background: none;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    color:#4d506e;
+}
+button.del:hover{
+    background: #ff004c;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    color:white;
+}
+
+button.deleteAll{
+    background:none;
+    border: 1px solid  #ff004c;
+    padding: 15px;
+    cursor: pointer;
+    color:#ff004c;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button.deleteAll:hover{
+    background:#ff004c;
+    color:white;
+}
+
+.icon-center{
+    max-width:100% ;
+}
+input{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: #2d3046;
+    font-size: 16px;
+    border-radius:10px ;
+    padding-left: 30px;
+    border: none;
+    color: white;   
+}
+@media  screen and (max-width:900px) {
+    form{
+        width:100%
+    }
+    .TaskList{
+        width: 100%;
+    }
+}
